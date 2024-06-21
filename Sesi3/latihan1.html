@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSS</title>
+    <!-- INTERNAL STYLE/CSS  -->
+    <style>
+        /* selector element */
+        h2 {
+            color: brown;
+            background-color: khaki;
+        }
+
+        /* selector id */
+        #sub-judul-2 {
+            color: green;
+        }
+
+        /* selector class */
+        .bg-blue {
+            background-color: lightblue;
+        }
+        .text-pink {
+            color: magenta;
+        }
+        /* semua h2 yang ada di dalam class artikel  */
+        .artikel h2 {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <!-- EXTERNAL CSS  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- INLINE STYLE/CSS  -->
+    <h1 style="color: blue; background-color: gray;">Judul Utama 1</h1>
+    <h1>Judul Utama 2</h1>
+    <h2>Sub Judul 1</h2>
+    <h2 id="sub-judul-2" class="bg-blue">Sub Judul 2</h2>
+    <h2 class="bg-blue text-pink">Sub Judul 3</h2>
+    <h2 class="text-pink" style="color: white">Sub Judul 4</h2>
+    <h3 class="sub-sub-judul">Sub Sub Judul 1</h3>
+
+    <div class="artikel">
+        <h2>Artikel 1</h2>
+        <h2>Artikel 2</h2>
+        <h3>Sub Artikel 1</h3>
+    </div>
+</body>
+</html>
